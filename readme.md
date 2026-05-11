@@ -28,6 +28,10 @@
   * **course**: 디지털시스템설계
   * **Details**: 4-Parallel SRAM 구조 및 Folded Structure 기반의 가변 63-tap 필터 설계
   * **Tech Stack**: Verilog HDL, SRAM Controller, Saturation Logic
+* **[Colored MNIST Classification: Hybrid Approach](./25_ML_colored_MNIST/readme.md)** _(2025.Fall Sem.)_
+  * **course**: 머신러닝
+  * **Details**: Palette-Area 알고리즘과 OvO-SVC를 결합한 하이브리드 분류 구현. CUDA(cuML) 가속 적용.
+  * **Tech Stack**: Python, cuML(CUDA), Scikit-learn, Jupyter Notebook
 * **[Image Processing Optimization Using Low-Level Techniques](./25_MA_Image_optimization_ARM/readme.md)** _(2025.Spring Sem.)_
   * **course**: 마이크로프로세서응용
   * **Details**: Planar 메모리 구조 변경 및 ARM Assembly 최적화
