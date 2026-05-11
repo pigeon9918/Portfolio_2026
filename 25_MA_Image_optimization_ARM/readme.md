@@ -11,13 +11,13 @@
 **주요 이미지 처리 작업 (서브 프로젝트):**
 - **Red Pixel Count:** 이미지에서 Red 값이 128 이상인 픽셀의 개수를 계산하는 함수 구현
 - **RGB Negative 변환:** RGB 값을 각각 255에서 뺀 색상 반전 이미지를 생성하는 함수 구현
-- **Grayscale 변환:** RGB 값을 가중합($3R + 6G + B$)을 이용하여 16-bit Grayscale 이미지로 변환하는 함수 구현
+- **Grayscale 변환:** RGB 값을 가중합(3R + 6G + B)을 이용하여 16-bit Grayscale 이미지로 변환하는 함수 구현
 
 ### Ⅰ-2. 진행 방향
 1. **기능 검증 (C 언어):** 각 변환 함수를 C 언어로 구현하여 정확성을 검증하고, Keil uVision 시뮬레이션 환경을 통해 함수 수행 전후의 메모리 상태를 확인하였습니다.
-2. **성능 최적화 (ARM Assembly):** Performance Analyzer를 통한 분석 후, 성능 최적화를 위해 inline assembly 함수를 구현하였습니다.
+2. **성능 최적화 (ARM Assembly):** Performance Analyzer를 통한 분석 후, 성능 최적화를 위해 inline assembly 함수를 구현하였습니다. ARM assembly의 조건부 실행 및 Barrel Shift연산 등으로 연산을 최적화 하였습니다.
 3. **Memory Relocation 도입:** 기존 32-bit RGBA 포맷에서 Alpha 채널을 제외하고 R, G, B 채널을 각각 연속된 메모리 공간에 분리 저장하는 **Planar 메모리 구조**를 구성하였습니다. 이를 통해 연산 시 불필요한 메모리 접근을 줄이고 캐시와 BUS 활용도를 높였습니다.
-4. Shift연산, bit flip 등 저수준 기법을 통해서 연산을 최적화 하였습니다.
+4. **추가적 최적화 기법:** Word 단위 전송을 통해서 메모리 접근을 줄이고 4 pixel 단위 함수를 도입하였습니다. 추가적으로, bit flip 등 binary 성질을 통해서 연산을 최적화 하였습니다.
 5. **결과 분석:** 최적화 전후의 함수 실행 시간을 분석하였으며,최종적으로 C 기반 결과와 ARM 최적화 버전의 출력 일치 여부를 검증하여 정확성과 성능 향상을 종합적으로 평가하였습니다.
 
 ---
@@ -41,7 +41,7 @@
 ## Ⅲ. 주요 알고리즘 및 최적화 기법
 
 ### Ⅲ-1. 이미지 변환 알고리즘
-1. **Grayscale ($3R + 6G + B$):**
+1. **Grayscale (3R + 6G + B):**
    - 단순 평균이 아닌 가중합을 사용하여 인간의 시각적 인지 특성을 반영.
    - ASM 구현 시 `LSL` (Logical Shift Left) 명령어를 활용하여 곱셈 연산을 덧셈과 시프트 연산으로 대체함으로써 속도를 향상시켰습니다.
 2. **Negative (반전):**
@@ -57,6 +57,7 @@
 
 2. **Block Data Transfer (`LDMIA` / `STMIA`):**
    - 한 번의 메모리 접근으로 여러 개의 픽셀 데이터를 레지스터로 로드.
+   - 4 pixel 단위로 처리 가능한 함수를 구현.
    - `LDMIA r0!, {r5-r12}`와 같이 다중 레지스터 로드 명령어를 사용하여 메모리 접근 횟수를 획기적으로 줄였습니다.
 
 3. **Loop Unrolling & Logic Optimization:**
