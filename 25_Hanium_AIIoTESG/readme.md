@@ -35,9 +35,9 @@
 - **Communication:** Wi-Fi, MQTT
 
 ### 3.2. 소프트웨어 스택 (Server Side)
+- **github:** [repository](https://github.com/yeop-sang/hanium_power_monitor_server)
 - **Backend:** Python (Flask), MySQL (Data Logging)
 - **AI/ML:** Pytorch (소비 패턴 분석), CNN, Claude API (보고서 자동 생성)
 - **Frontend:** HTML/CSS/JS, Vue.js
 - **Infrastructure:** Docker, Cuda, wireguard VPN
-- **Server-Side:** https://github.com/yeop-sang/hanium_power_monitor_server
 ---

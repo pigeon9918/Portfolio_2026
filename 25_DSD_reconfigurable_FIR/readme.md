@@ -1,7 +1,6 @@
 # DSD 2025 - Final Project Report: Reconfigurable FIR Filter
 
 ### 발표자료
-- **사양 지시서**: [PDF](./FIR%20filter%20with%20kaiser%20window_400kHz%20BW,%20600kHz%20Sampling,%20200kHz%20Symbol_Team%20Project_v011.pdf)
 - **보고서**: [PDF](./DSD2025_Final_Report.pdf)
 
 ---
@@ -10,6 +9,7 @@
 본 시스템은 4-Parallel SRAM 구조를 가진 재구성 가능한(Reconfigurable) FIR 필터입니다.
 
 ### 1.1. FIR 필터 기본 사양
+- **사양 지시서**: [PDF](./FIR%20filter%20with%20kaiser%20window_400kHz%20BW,%20600kHz%20Sampling,%20200kHz%20Symbol_Team%20Project_v011.pdf)
 - **Clock Speed:** 12MHz / **Sampling Frequency:** 600KHz
 - **Input:** Signed 3-bit / **Output:** Signed 16-bit
 - **가변 길이 대응:** 최대 63 ~ 최저 1 (홀수)

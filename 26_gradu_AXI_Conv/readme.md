@@ -3,7 +3,7 @@
 **[2026년 졸업작품 - 선행 과제] Zynq-7000 SoC 기반 HW/SW Co-design**
 
 ### 발표자료
-- **보고서:** [PDF](./AXI_CONV.pdf)
+- **발표자료:** [PDF](./AXI_CONV.pdf)
 
 ## 1. 프로젝트 개요
 
