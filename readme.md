@@ -1,11 +1,11 @@
 # Dongjun Kim (김동준)
 ## 💡 Technical Focus
 * **Embedded System**
-* **SoC Architecture & HW-SW Co-design**
+* **SoC & HW-SW Co-design**
 
 ## 💻 Projects
 
-### 🚀 High-Level SoC & HW/SW Co-design
+### 🚀 SoC FPGA - HW/SW Co-design
 * **Graduation Project: Systolic Array 기반 Matrix 연산기 설계** _(2026.04 ~ Present)_
   * **Details**: SoC FPGA 기반의 Systolic Array RTL 설계 및 최적화
   * **Tech Stack**: Verilog HDL, C, AXI4, Zynq SoC FPGA
@@ -39,10 +39,8 @@
   * **[STM32 Graphic: STM32 F401 기반 GUI 터치 인터페이스 및 렌더링 엔진 구현](./25_embSW_STM32_graphic/readme.md)**
       * **Tech Stack**: STM32, STMCubeIDE
 
-### 👥 Academic Club & Early Prototyping
+### 👥 Projects in Academic Club
 * **전자전시회 (Soongsil Electronic Exhibition) 학술 소모임**
-  * **Educator & Vice President** _(2021.12 ~ 2022.12)_
-- **Projects**
   * **[Among U SEE (코로나19 출입 명부 기록 시스템)](./21_SEE_AmongUSEE/readme.md)** _(2021.09 ~ 2021.11)_
   * **[IoT Box (Wi-Fi 기반 만능 리모컨)](./21_SEE_IoT_Box/readme.md)** _(2021.05 ~ 2021.06)_
 
