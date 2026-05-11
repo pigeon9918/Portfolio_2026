@@ -1,0 +1,8 @@
+../Core/Src/render.c:16:13:clear_entities	16	static
+../Core/Src/render.c:25:6:RENDER_InitUI	16	static
+../Core/Src/render.c:63:5:RENDER_CreateEntity	24	static
+../Core/Src/render.c:80:6:draw_line	16	static
+../Core/Src/render.c:86:6:draw_bg	32	static
+../Core/Src/render.c:114:13:change_bg_color	4	static
+../Core/Src/render.c:120:6:draw_tile	48	static
+../Core/Src/render.c:147:6:end_of_frame	4	static

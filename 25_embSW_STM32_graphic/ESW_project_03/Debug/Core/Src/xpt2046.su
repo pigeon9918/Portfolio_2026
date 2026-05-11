@@ -1,0 +1,7 @@
+../Core/Inc/xpt2046.h:27:20:xpt_select	16	static
+../Core/Inc/xpt2046.h:31:20:xpt_unselect	16	static
+../Core/Src/xpt2046.c:9:6:xpt_init	24	static
+../Core/Src/xpt2046.c:19:13:_xpt_swap	32	static
+../Core/Src/xpt2046.c:26:17:_xpt_find_median	16	static
+../Core/Src/xpt2046.c:54:13:_xpt_read_raw	56	static
+../Core/Src/xpt2046.c:76:6:xpt_read	48	static

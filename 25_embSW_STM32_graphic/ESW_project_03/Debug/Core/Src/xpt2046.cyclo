@@ -1,0 +1,7 @@
+../Core/Inc/xpt2046.h:27:20:xpt_select	1
+../Core/Inc/xpt2046.h:31:20:xpt_unselect	1
+../Core/Src/xpt2046.c:9:6:xpt_init	1
+../Core/Src/xpt2046.c:19:13:_xpt_swap	1
+../Core/Src/xpt2046.c:26:17:_xpt_find_median	8
+../Core/Src/xpt2046.c:54:13:_xpt_read_raw	5
+../Core/Src/xpt2046.c:76:6:xpt_read	9

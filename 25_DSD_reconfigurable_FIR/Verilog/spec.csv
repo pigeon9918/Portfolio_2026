@@ -1,0 +1,33 @@
+MAC Unit,(wCnt),address,wTap Index,Delay Chain Input A (Positive Offset),Delay Chain Input B (Negative Offset),Description,coeff_value
+MAC0,0,00_0000,wTap[0],rDelayCain[31],N/A,Center Tap (Middle),500
+MAC0,1,00_0001,wTap[1],rDelayCain[32],rDelayCain[30],Symmetric Pair 1,206
+MAC0,2,00_0010,wTap[2],rDelayCain[33],rDelayCain[29],Symmetric Pair 2,-102
+MAC0,3,00_0011,wTap[3],rDelayCain[34],rDelayCain[28],Symmetric Pair 3,0
+MAC0,4,00_0100,wTap[4],rDelayCain[35],rDelayCain[27],Symmetric Pair 4,48
+MAC0,5,00_0101,wTap[5],rDelayCain[36],rDelayCain[26],Symmetric Pair 5,-37
+MAC0,6,00_0110,wTap[6],rDelayCain[37],rDelayCain[25],Symmetric Pair 6,0
+MAC0,7,00_0111,wTap[7],rDelayCain[38],rDelayCain[24],Symmetric Pair 7,24
+MAC0,8,00_1000,wTap[8],rDelayCain[39],rDelayCain[23],Symmetric Pair 8,-19
+MAC0,9,00_1001,wTap[9],rDelayCain[40],rDelayCain[22],Symmetric Pair 9,0
+MAC1,0,01_0000,wTap[10],rDelayCain[41],rDelayCain[21],Symmetric Pair 10,13
+MAC1,1,01_0001,wTap[11],rDelayCain[42],rDelayCain[20],Symmetric Pair 11,
+MAC1,2,01_0010,wTap[12],rDelayCain[43],rDelayCain[19],Symmetric Pair 12,
+MAC1,3,01_0011,wTap[13],rDelayCain[44],rDelayCain[18],Symmetric Pair 13,
+MAC1,4,01_0100,wTap[14],rDelayCain[45],rDelayCain[17],Symmetric Pair 14,
+MAC1,5,01_0101,wTap[15],rDelayCain[46],rDelayCain[16],Symmetric Pair 15,
+MAC1,6,01_0110,wTap[16],rDelayCain[47],rDelayCain[15],Symmetric Pair 16,
+MAC1,7,01_0111,wTap[17],rDelayCain[48],rDelayCain[14],Symmetric Pair 17,
+MAC1,8,01_1000,wTap[18],rDelayCain[49],rDelayCain[13],Symmetric Pair 18,
+MAC1,9,01_1001,wTap[19],rDelayCain[50],rDelayCain[12],Symmetric Pair 19,
+MAC2,0,10_0000,wTap[20],rDelayCain[51],rDelayCain[11],Symmetric Pair 20,
+MAC2,1,10_0001,wTap[21],rDelayCain[52],rDelayCain[10],Symmetric Pair 21,
+MAC2,2,10_0010,wTap[22],rDelayCain[53],rDelayCain[9],Symmetric Pair 22,
+MAC2,3,10_0011,wTap[23],rDelayCain[54],rDelayCain[8],Symmetric Pair 23,
+MAC2,4,10_0100,wTap[24],rDelayCain[55],rDelayCain[7],Symmetric Pair 24,
+MAC2,5,10_0101,wTap[25],rDelayCain[56],rDelayCain[6],Symmetric Pair 25,
+MAC2,6,10_0110,wTap[26],rDelayCain[57],rDelayCain[5],Symmetric Pair 26,
+MAC2,7,10_0111,wTap[27],rDelayCain[58],rDelayCain[4],Symmetric Pair 27,
+MAC2,8,10_1000,wTap[28],rDelayCain[59],rDelayCain[3],Symmetric Pair 28,
+MAC2,9,10_1001,wTap[29],rDelayCain[60],rDelayCain[2],Symmetric Pair 29,
+MAC3,0,11_0000,wTap[30],rDelayCain[61],rDelayCain[1],Symmetric Pair 30,
+MAC3,1,11_0001,wTap[31],rDelayCain[62],rDelayCain[0],Edge Taps (First & Last),
